@@ -206,43 +206,6 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 304,
-            "left": 760,
-            "width": 380,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Process I/O read bytes",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:tech.generic.io.bytesRead",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "PROCESS_GROUP_INSTANCE",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.process_group_instance",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
             "top": 0,
             "left": 760,
             "width": 380,
@@ -258,43 +221,6 @@
                 "type": "TOP_LIST",
                 "series": [{
                     "metric": "builtin:tech.generic.mem.workingSetSize",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "PROCESS_GROUP_INSTANCE",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.process_group_instance",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 608,
-            "left": 0,
-            "width": 380,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Process page faults counter",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:tech.generic.mem.pageFaults",
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "PROCESS_GROUP_INSTANCE",
@@ -391,7 +317,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 608,
+            "top": 304,
             "left": 380,
             "width": 380,
             "height": 304
@@ -429,7 +355,7 @@
         "configured": true,
         "bounds": {
             "top": 608,
-            "left": 760,
+            "left": 1520,
             "width": 380,
             "height": 304
         },
@@ -466,44 +392,7 @@
         "configured": true,
         "bounds": {
             "top": 304,
-            "left": 380,
-            "width": 380,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Server responsiveness",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:tech.generic.network.responsiveness",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "PROCESS_GROUP_INSTANCE",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.process_group_instance",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 608,
-            "left": 1520,
+            "left": 760,
             "width": 380,
             "height": 304
         },
@@ -539,7 +428,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 608,
             "left": 0,
             "width": 380,
             "height": 304
@@ -576,7 +465,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 608,
             "left": 380,
             "width": 380,
             "height": 304
@@ -613,7 +502,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 608,
             "left": 760,
             "width": 380,
             "height": 304
@@ -650,7 +539,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 608,
             "left": 1140,
             "width": 380,
             "height": 304
@@ -683,78 +572,96 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 608,
-            "left": 1140,
-            "width": 380,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "New session received per second",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:tech.generic.network.sessions.newAggr",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "PROCESS_GROUP_INSTANCE",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.process_group_instance",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
+        "name": "Overview Links \u25BC",
+        "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 912,
-            "left": 1520,
+            "left": 0,
             "width": 380,
-            "height": 304
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Utilization Links \u25BC",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 380,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Under Utilization Links \u25BC",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 760,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Availability Links \u25BC",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 1140,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 380,
+            "height": 494
         },
         "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": "Process file descriptors used",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "builtin:tech.generic.handles.fileDescriptorsUsed",
-                    "aggregation": "AVG",
-                    "type": "LINE",
-                    "entityType": "PROCESS_GROUP_INSTANCE",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.process_group_instance",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
+        "markdown": "## This is a Markdown tile\n\nIt supports **rich text** and [links](https://dynatrace.com)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 380,
+            "width": 380,
+            "height": 494
+        },
+        "tileFilter": {},
+        "markdown": "## This is a Markdown tile\n\nIt supports **rich text** and [links](https://dynatrace.com)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 760,
+            "width": 380,
+            "height": 494
+        },
+        "tileFilter": {},
+        "markdown": "## This is a Markdown tile\n\nIt supports **rich text** and [links](https://dynatrace.com)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1140,
+            "width": 380,
+            "height": 494
+        },
+        "tileFilter": {},
+        "markdown": "## This is a Markdown tile\n\nIt supports **rich text** and [links](https://dynatrace.com)"
     }]
 }
