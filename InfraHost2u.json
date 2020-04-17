@@ -5,9 +5,9 @@
     ],
     "clusterVersion": "1.188.92.20200317-152551"
   },
-  "id": "2bce7bf1-154a-404d-b6cc-b44f18e33e3c",
+  "id": "f3d88118-7863-47d6-8a81-90b08dbe395c",
   "dashboardMetadata": {
-    "name": "\u2601 AWS Utilization",
+    "name": "\ud83d\udcbb Host Utilization",
     "shared": false,
     "owner": "MyEmail",
     "sharingDetails": {
@@ -21,6 +21,202 @@
     "tags": ["Utilized Infra"]
   },
   "tiles": [
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 0,
+        "width": 418,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "CPU",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.cpu.usage",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "Host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 418,
+        "width": 418,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Memory",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.mem.usage",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "Host",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 836,
+        "width": 418,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Network",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.net.nic.trafficIn",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "Host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "Network interface",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 1254,
+        "width": 418,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Disk",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.disk.usedPct",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "Host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "Disk",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
     {
       "name": "Markdown",
       "tileType": "MARKDOWN",
@@ -68,196 +264,6 @@
       }
     },
     {
-      "name": "Custom chart",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 76,
-        "left": 836,
-        "width": 418,
-        "height": 266
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ALB Number of Requests",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:cloud.aws.alb.requests",
-              "aggregation": "NONE",
-              "percentile": null,
-              "type": "LINE",
-              "entityType": "ALB",
-              "dimensions": [
-                {
-                  "id": "0",
-                  "name": "AWS Classic Load Balancer",
-                  "values": [],
-                  "entityDimension": true
-                }
-              ],
-              "sortAscending": true,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
-      "name": "Custom chart",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 76,
-        "left": 418,
-        "width": 418,
-        "height": 266
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "Number of Stopped EC2 Instances",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:cloud.aws.az.stopped",
-              "aggregation": "AVG",
-              "percentile": null,
-              "type": "LINE",
-              "entityType": "AWS_CREDENTIALS",
-              "dimensions": [
-                {
-                  "id": "0",
-                  "name": "AWS account",
-                  "values": [],
-                  "entityDimension": true
-                },
-                {
-                  "id": "1",
-                  "name": "AWS Availability Zone",
-                  "values": [],
-                  "entityDimension": true
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
-      "name": "Custom chart",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 76,
-        "left": 0,
-        "width": 418,
-        "height": 266
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "EC2 CPU Usage",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:cloud.aws.ec2.cpu.usage",
-              "aggregation": "AVG",
-              "percentile": null,
-              "type": "LINE",
-              "entityType": "EC2",
-              "dimensions": [
-                {
-                  "id": "0",
-                  "name": "AWS EC2",
-                  "values": [],
-                  "entityDimension": true
-                }
-              ],
-              "sortAscending": true,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
-      "name": "Custom chart",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 76,
-        "left": 1254,
-        "width": 418,
-        "height": 266
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "ALB Active Connections",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "TOP_LIST",
-          "series": [
-            {
-              "metric": "builtin:cloud.aws.alb.connections.active",
-              "aggregation": "AVG",
-              "percentile": null,
-              "type": "LINE",
-              "entityType": "ALB",
-              "dimensions": [
-                {
-                  "id": "0",
-                  "name": "AWS Classic Load Balancer",
-                  "values": [],
-                  "entityDimension": true
-                }
-              ],
-              "sortAscending": true,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
       "name": "Markdown",
       "tileType": "MARKDOWN",
       "configured": true,
@@ -271,7 +277,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [EC2 CPU Usage](#dashboard;id=8ddbf4e6-ee89-479d-83bb-b5f7ce951cbb)"
+      "markdown": "## [CPU](#dashboard;id=d6f5dc55-d8d9-4f66-b605-433f205ba38e)"
     },
     {
       "name": "Markdown",
@@ -287,7 +293,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## Number of Stopped EC2 Instances"
+      "markdown": "## Memory"
     },
     {
       "name": "Markdown",
@@ -303,7 +309,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Number of Requests](#dashboard;id=03d3df74-2be5-427a-aa54-d5d9a9599594)"
+      "markdown": "## [Network](#dashboard;id=94865744-cd13-4b46-a77f-0bdbf53bdd82)"
     },
     {
       "name": "Markdown",
@@ -319,7 +325,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Active Connections](#dashboard;id=950d1e89-9d67-4b18-9242-320cf453f6d2)"
+      "markdown": "## [Disk](#dashboard;id=fe7e01a8-cb25-4d54-a61f-6c9ae57fa35b)"
     },
     {
       "name": "Custom chart",
@@ -337,28 +343,22 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Number of Stopped EC2 Instances",
+        "customName": "Memory",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [
             {
-              "metric": "builtin:cloud.aws.az.stopped",
+              "metric": "builtin:host.mem.usage",
               "aggregation": "AVG",
               "percentile": null,
               "type": "AREA",
-              "entityType": "AWS_CREDENTIALS",
+              "entityType": "HOST",
               "dimensions": [
                 {
                   "id": "0",
-                  "name": "AWS account",
-                  "values": [],
-                  "entityDimension": true
-                },
-                {
-                  "id": "1",
-                  "name": "AWS Availability Zone",
+                  "name": "Host",
                   "values": [],
                   "entityDimension": true
                 }

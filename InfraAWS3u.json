@@ -5,7 +5,7 @@
     ],
     "clusterVersion": "1.188.92.20200317-152551"
   },
-  "id": "2bce7bf1-154a-404d-b6cc-b44f18e33e3c",
+  "id": "13d3df74-2be5-427a-aa54-d5d9a9599594",
   "dashboardMetadata": {
     "name": "\u2601 AWS Utilization",
     "shared": false,
@@ -103,7 +103,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -155,7 +155,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": false,
+              "sortAscending": true,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -201,7 +201,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -247,7 +247,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -271,7 +271,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [EC2 CPU Usage](#dashboard;id=8ddbf4e6-ee89-479d-83bb-b5f7ce951cbb)"
+      "markdown": "## [EC2 CPU Usage](#dashboard;id=9ddbf4e6-ee89-479d-83bb-b5f7ce951cbb)"
     },
     {
       "name": "Markdown",
@@ -287,7 +287,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## Number of Stopped EC2 Instances"
+      "markdown": "## [Number of Stopped EC2 Instances](#dashboard;id=2bce7bf1-154a-404d-b6cc-b44f18e33e3c)"
     },
     {
       "name": "Markdown",
@@ -303,7 +303,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Number of Requests](#dashboard;id=03d3df74-2be5-427a-aa54-d5d9a9599594)"
+      "markdown": "## ALB Number of Requests"
     },
     {
       "name": "Markdown",
@@ -319,7 +319,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Active Connections](#dashboard;id=950d1e89-9d67-4b18-9242-320cf453f6d2)"
+      "markdown": "## [ALB Active Connections](#dashboard;id=a50d1e89-9d67-4b18-9242-320cf453f6d2)"
     },
     {
       "name": "Custom chart",
@@ -337,28 +337,22 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Number of Stopped EC2 Instances",
+        "customName": "ALB Number of Requests",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
           "type": "TIMESERIES",
           "series": [
             {
-              "metric": "builtin:cloud.aws.az.stopped",
-              "aggregation": "AVG",
+              "metric": "builtin:cloud.aws.alb.requests",
+              "aggregation": "NONE",
               "percentile": null,
               "type": "AREA",
-              "entityType": "AWS_CREDENTIALS",
+              "entityType": "ALB",
               "dimensions": [
                 {
                   "id": "0",
-                  "name": "AWS account",
-                  "values": [],
-                  "entityDimension": true
-                },
-                {
-                  "id": "1",
-                  "name": "AWS Availability Zone",
+                  "name": "AWS Classic Load Balancer",
                   "values": [],
                   "entityDimension": true
                 }

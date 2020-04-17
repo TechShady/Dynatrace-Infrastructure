@@ -103,7 +103,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -155,7 +155,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": false,
+              "sortAscending": true,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -201,7 +201,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -247,7 +247,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": true,
+              "sortAscending": false,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
@@ -271,7 +271,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [EC2 CPU Usage](#dashboard;id=8ddbf4e6-ee89-479d-83bb-b5f7ce951cbb)"
+      "markdown": "## [EC2 CPU Usage](#dashboard;id=9ddbf4e6-ee89-479d-83bb-b5f7ce951cbb)"
     },
     {
       "name": "Markdown",
@@ -303,7 +303,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Number of Requests](#dashboard;id=03d3df74-2be5-427a-aa54-d5d9a9599594)"
+      "markdown": "## [ALB Number of Requests](#dashboard;id=13d3df74-2be5-427a-aa54-d5d9a9599594)"
     },
     {
       "name": "Markdown",
@@ -319,7 +319,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [ALB Active Connections](#dashboard;id=950d1e89-9d67-4b18-9242-320cf453f6d2)"
+      "markdown": "## [ALB Active Connections](#dashboard;id=a50d1e89-9d67-4b18-9242-320cf453f6d2)"
     },
     {
       "name": "Custom chart",
@@ -363,7 +363,7 @@
                   "entityDimension": true
                 }
               ],
-              "sortAscending": false,
+              "sortAscending": true,
               "sortColumn": true,
               "aggregationRate": "TOTAL"
             }
