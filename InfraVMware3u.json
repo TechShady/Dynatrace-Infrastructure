@@ -17,8 +17,7 @@
     "dashboardFilter": {
       "timeframe": "",
       "managementZone": null
-    },
-    "tags": ["Utilized Infra"]
+    }
   },
   "tiles": [
     {
