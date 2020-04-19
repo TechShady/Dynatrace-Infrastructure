@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": ""
-        }
+        },
+    "tags": ["Portal"]
     },
     "tiles": [{
         "name": "Custom chart",
