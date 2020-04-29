@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "\ud83d\udc0b Container Utilization",
     "shared": false,
-    "owner": "MyEmail",
+    "owner": "${MyEmail}",
     "sharingDetails": {
       "linkShared": true,
       "published": false

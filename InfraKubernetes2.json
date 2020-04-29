@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "\u2744 Kubernetes Utilization",
     "shared": true,
-    "owner": "MyEmail",
+    "owner": "${MyEmail}",
     "sharingDetails": {
       "linkShared": true,
       "published": false

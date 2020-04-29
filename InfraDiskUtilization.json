@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "\ud83d\udce1 Disk Utilization",
     "shared": true,
-    "owner": "MyEmail",
+    "owner": "${MyEmail}",
     "sharingDetails": {
       "linkShared": true,
       "published": true

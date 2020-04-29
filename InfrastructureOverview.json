@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": "\ud83d\udea4 MyTenant Infrastructure Management Portal",
         "shared": false,
-        "owner": "MyEmail",
+        "owner": "${MyEmail}",
         "sharingDetails": {
             "linkShared": true,
             "published": false

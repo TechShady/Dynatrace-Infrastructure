@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "\u267b Availability",
     "shared": true,
-    "owner": "MyEmail",
+    "owner": "${MyEmail}",
     "sharingDetails": {
       "linkShared": true,
       "published": true

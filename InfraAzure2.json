@@ -9,7 +9,7 @@
   "dashboardMetadata": {
     "name": "\u2601 Azure Utilization",
     "shared": false,
-    "owner": "MyEmail",
+    "owner": "${MyEmail}",
     "sharingDetails": {
       "linkShared": true,
       "published": false
